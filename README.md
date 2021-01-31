@@ -56,7 +56,7 @@ ________________________________________________________________________________
 
 ### Week 2
 
-**Activity 0201**
+**Activity 0201**:
 
 The app that I've chosen to assess to identify the target user base is Discord.
 
@@ -71,7 +71,83 @@ ________________________________________________________________________________
 <br/>
 <br/>
 
-**Activity 0202**
+**Activity 0202**:
 
+For this activity I'm going to use MainGameHub.java included in the repo to examine variables and method names. I think that most of the variables and methods are sufficiently descriptive. I do already try not to make them too long but there's a non-zero amount of times that I can make them too short.
 
+The first one I'll start off with is the method name tooHighLowRight(). 
+I know exactly what it does but it doesn't make sense looking at it. I should have kept with the naming convention I used for the other core game methods. I even wrote above the method in a comment that it's the core game logic for HiLo. I would rename it coreHiLoGame()
 
+```
+public int tooHighLowRight() {
+
+		do {
+			enterGuess();
+			if (userGuess > 0) {
+				if (userGuess == number)
+					System.out.println("Right!! Amount of tries: " + count);
+				else if (userGuess < number)
+					System.out.println("You're too low!");
+				else
+					System.out.println("You're too high!");
+			}
+
+		} while (userGuess != number && userGuess > 0);
+		System.out.println();
+		System.out.println("Play again? y/n");
+		str = in.nextLine();
+
+		if (str.equalsIgnoreCase("y")) {
+			startHiLo();
+			// enterGuess();
+			tooHighLowRight();
+		}
+
+		return userGuess;
+```
+
+The second will be the variable 'an'. I was mostly trying to save keystrokes but it's not very clear in use even though it's explained in the comment. 
+
+```
+protected boolean an; // stores console input in an - 'answer'
+```
+
+The third will be the method name RPScon(). RPS is rock, paper, scissors but this is a good example of a bad name because I have no idea what 'con' is supposed to be. My best guess is that it's short for converter because I was assigning a numeric value to RPS and using numGenerator() to choose R, P, or S.
+
+```
+	public int RPScon(int y) {
+
+		if (y == 1)
+			compTurn = "R";
+		else if (y == 2)
+			compTurn = "P";
+		else if (y == 3)
+			compTurn = "S";
+
+		return y;
+	}
+```
+
+The forth will be the variable I assigned to the scanner. I usually leave the scanner object as 'scan' so I'm not sure why I changed it this time.
+
+``` 
+Scanner in = new Scanner(System.in);
+```
+
+And lastly, the last one I could change to make more sense at facevalue is 'count' because what is it counting? It's actually counting the turn count so that it keeps track of how many rolls the player is on to appropriately declare the user a pig if they lose and are on two or more rolls in a turn. So I guess I could call it turnCount or rollCount instead.
+
+```
+count++;
+```
+
+<br/>
+<br/>
+
+________________________________________________________________________________________________________________________
+
+<br/>
+<br/>
+
+### Week 3
+
+**Activity 0301**:
