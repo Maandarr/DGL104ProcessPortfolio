@@ -151,3 +151,37 @@ ________________________________________________________________________________
 ### Week 3
 
 **Activity 0301**:
+
+An app I've chosen to examine is Facebook.
+
+The biggest layout difference is with the navigation bars. In Android, it's at the top and on iPhone, it's on the bottom. The icons are also in a different order.
+
+In the groups page, there's a slightly different button layout at the top of the page. The biggest difference is that the create option is a smaller FAB icon above the buttons on Android and on iPhone, it's part of the tab navigation also with the text 'Create' on it.
+
+On the profile page, a clear difference is the manage posts button and the filter button are icons above the new post section in Android and on iPhone they're in text above and below.
+
+The Watch page has the tab buttons in a different order.
+
+Android | iPhone
+------- | -------
+<img src="Android1.jpg" width=200px> | <img src="iPhone1.png" width=220px>
+<img src="Android3.jpg" width=200px> | <img src="iPhone4.png" width=220px>
+<img src="Android4.jpg" width=200px> | <img src="iPhone3.png" width=220px>
+<img src="Android6.jpg" width=200px> | <img src="iPhone6.png" width=220px>
+
+<br/>
+<br/>
+
+***
+
+<br/>
+<br/>
+
+
+**Activity 0302**:
+
+The documentation I've chosen to write about is on images and graphics on Android Developers.
+
+This section is about drawables, vector drawables, bitmaps, colors and implementation. You can create drawables from resource images, from XML resources, create shape drawables, and use NinePatch drawables, or use vector graphics in your app.
+
+The documentation usually starts with some sort of introductory section or preview of the further content. A lot of the articles then go right into XML syntax or how you would execute the content into code, offering both Kotlin and Java versions. Often they will also have videos for visual explanations of the concepts and syntax in action.
