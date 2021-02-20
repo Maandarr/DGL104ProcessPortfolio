@@ -221,3 +221,18 @@ class Split2 {
 ```
 
 Orthogonality relates to MVC by separating components into a data model, controller, and a view. When these components are separated by concept, it becomes easier to decouple and easier for the components to be orthogonal.
+
+<br/>
+<br/>
+
+***
+
+<br/>
+<br/>
+
+### Week 5
+
+**Activity 0501**:
+
+The main similarities between MVC, MVP, and MVVM are that they all use a model to store the data and a view to represent the model. In MVP, the Activiies are now considered part of the view and implement an interface. In MVVM, the view binds to observable variables by the ViewModel.
+The major differences are in the third element of each concept. In MVC, the Controller is the middle man between the model and the view. The view tells the controller that a button was clicked and the controller interacts with the model and changes the data accordingly. In MVP, the Presenter is tied to an interface and does not directly interact with the view. In MVVM, the ViewModel has an interface and the view has the Activity.
