@@ -236,3 +236,18 @@ Orthogonality relates to MVC by separating components into a data model, control
 
 The main similarities between MVC, MVP, and MVVM are that they all use a model to store the data and a view to represent the model. In MVP, the Activiies are now considered part of the view and implement an interface. In MVVM, the view binds to observable variables by the ViewModel.
 The major differences are in the third element of each concept. In MVC, the Controller is the middle man between the model and the view. The view tells the controller that a button was clicked and the controller interacts with the model and changes the data accordingly. In MVP, the Presenter is tied to an interface and does not directly interact with the view. In MVVM, the ViewModel has an interface and the view has the Activity.
+
+
+<br/>
+<br/>
+
+***
+
+<br/>
+<br/>
+
+**Activity 0502**:
+
+For this activity, I'll be using GameRootAbstr.java to examine. 
+
+I ended up using a lot of global variables for this project which were indeed unnecessary because it was just an abstract class with only one class inheriting from it. I could have just put them in the MainGameHub. I would also remove static from all of them and mark them all as private.
