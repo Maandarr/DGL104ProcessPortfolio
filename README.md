@@ -185,3 +185,39 @@ The documentation I've chosen to write about is on images and graphics on Androi
 This section is about drawables, vector drawables, bitmaps, colors and implementation. You can create drawables from resource images, from XML resources, create shape drawables, and use NinePatch drawables, or use vector graphics in your app.
 
 The documentation usually starts with some sort of introductory section or preview of the further content. A lot of the articles then go right into XML syntax or how you would execute the content into code, offering both Kotlin and Java versions. Often they will also have videos for visual explanations of the concepts and syntax in action.
+
+
+<br/>
+<br/>
+
+***
+
+<br/>
+<br/>
+
+### Week 4
+
+**Activity 0401**:
+
+A UX pattern that I think is valuable is a one-handed pattern. Whether it's through lackadaisical habit or actually only having one free hand, an app that supports one-handed use creates efficiency and productivity with less effort. It also feels more comfortable using one hand while using an app. Being more of a one-handed phone user myself, it's way easier to browse social media or reddit whilst laying in bed at night when the app supports it. If the app requires me to keep raising my arm to advance to another screen when I'm tired, I'll be less likely to spend time on it. It's funny that we prefer the methods that have a higher chance of dropping your phone on your face just to save some time. 
+
+<br/>
+<br/>
+
+***
+
+<br/>
+<br/>
+
+**Acivity 0402**:
+
+In exercise 1, I believe that the second option is the more orthogonal approach. It has the potential for reusability in case you wanted to use input from the console, etc. 
+
+```
+class Split2 {
+  constructor(line)
+  def getField(n)
+}
+```
+
+Orthogonality relates to MVC by separating components into a data model, controller, and a view. When these components are separated by concept, it becomes easier to decouple and easier for the components to be orthogonal.
