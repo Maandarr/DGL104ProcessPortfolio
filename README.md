@@ -251,3 +251,150 @@ The major differences are in the third element of each concept. In MVC, the Cont
 For this activity, I'll be using GameRootAbstr.java to examine. 
 
 I ended up using a lot of global variables for this project which were indeed unnecessary because it was just an abstract class with only one class inheriting from it. I could have just put them in the MainGameHub. I would also remove static from all of them and mark them all as private.
+
+<br/>
+<br/>
+
+***
+
+<br/>
+<br/>
+
+### Week 8
+
+**Activity 0801**:
+
+MVC, MVP, MVVM:
+ * The model stores the data
+ * The view represents a model
+ 
+ The third component in all three have major differences. In MVC, The controller is the middle man between model and view. In MVP, the Presenter is tied to an interface and does not interact with the view. In MVVM, the ViewModel has the interface and the view has the activity.
+
+The difference with MVI is that the Model in MVI represents both the state of an app and the data it holds while the model in the others just holds the data. Interfaces represent the Views that are implemented by Activities or Fragments. The Intent represents an intention or desire to perfrom an action. 
+This architecture operates with a cyclical flow between the business logic, view, and presenter.
+
+<br/>
+<br/>
+
+***
+
+<br/>
+<br/>
+
+**Activity 0802**:
+
+The app I'm going to use to examine resources is Gmail.
+The resources I think are critical in Gmail's functionality is network, caching, battery performance and lazy loading. The app has options in the settings so that you can adjust the frequency of syncing your mail and an option to only download files over wifi. It uses lazy loading for the emails, only showing who it's from, the subject, and time of received or sent emails. When you open an email, it won't show the images unless you allow it in each email. It uses caching for the settings as well as all of the log in and password information.
+
+<br/>
+<br/>
+
+***
+
+<br/>
+<br/>
+
+### Week 9
+
+**Activity 0902**:
+
+Debugging is something I've not been the strongest on. I've definitely been guilty of, at least in the first semester, saying whatever error or mistake is impossible. I've grown to not have that mindset anymore thankfully because I know there's a lot more going that than what I currently understand. 
+
+As I code more and more, I become familiar with the various ways of process of elimination. It's definitely the type of debugging I've always used, whether it's started off by just checking spelling and syntax or if I need to invalidate the cache. 
+
+Rubber ducking I definitely use once in a while to my poor partner that doesn't understand at all what I'm going on about, but likes to hear it anyway.
+
+Logging and tracing is something I'm not all that confident in using. It's something that I want to start using in the future.
+
+<br/>
+<br/>
+
+***
+
+<br/>
+<br/>
+
+**Activity 0903**:
+
+I used these four steps in a previous project. It was really interesting to use because my usual method is to start changing things right away but also to read and study the code for hours. A step I can improve on is the hypothesis and writing things down so I don't forget what I've already tried. I'm sure the four step process would work on anything needing to be debugged but I don't think it would be necessary for small and glaring fixes. Unless changing the simple thing breaks the whole project.
+
+<br/>
+<br/>
+
+***
+
+<br/>
+<br/>
+
+### Week 10
+
+**Activity 1001**:
+
+For most of last semester's CPS 100, I was programming by coincidence. I was completely new to java and didn't understand how it worked nor why it worked together. I didn't really come out of that course feeling like I knew what I was doing either. It's really turned around this semester though where I find myself programming deliberately. In my last assignment for 114, I found myself wanting to add more and more features but stopped myself because the requirements were met plus additional features. 
+
+One thing I already do when programming deliberately is prioritizing my effort. I will focus on the main components that will make the app run and then I will go back and add the bells and whistles. One thing I need to start doing is to document my assumptions and use assertions. I haven't used assertions yet but I can only imagine how valuable this tool will be.
+
+<br/>
+<br/>
+
+***
+
+<br/>
+<br/>
+
+**Activity 1003**:
+
+Debugging | Testing
+------ | ------
+Code is already written and bugs have shown up. | Test first and write the code later.
+Fixing bugs found in testing. | Finding bugs and errors.
+Debugging is done by the developer. Cannot automate. | Testing can be automated as well as manually.
+
+The pros of testing is that you can write the tests before you write the code. When you have tests written, then you know your code is done when it passes the tests. A con of testing is that it's hard. You can't write a test case for every single bug in a very large program because there could end up being 2^64 test cases.
+
+Pros of debugging are that the end results fixes the bugs you have found. A con is that sometimes it can be difficult to consistently reproduce the bug
+
+<br/>
+<br/>
+
+***
+
+<br/>
+<br/>
+
+### Week 10
+
+**Activity 1101**:
+
+Retrofit:
+The purpose of Retrofit API is to turn your HTTP API into a Java Interface. Interfaces are then turned into callable objects.
+
+Gson:
+The purpose of GSON is to be able to convert Java objects into their JSON representation. It can be used to work on pre-existing objects that you don't have source-code of, extensive support of Java Generics, allows custom representations for objects and supports arbitrarily complex objects.
+
+EventBus:
+The purpose of EventBus is to simplify communication between Activities, Fragments, Threads, Services, etc. with less code. EventBus propogates listeners for all participants and decouples event senders and receivers.
+
+Google Pay API:
+The purpose of Google Pay's API is to enable fast and simple checkouts in your app and gives access to cards saved on Google Accounts. 
+
+BBVA API Market:
+The purpose of BBVA is to offer many types of financial API's. BBVA Customers allows for the use of OAuth-based interfaces to handle information belonging to customers. Customers and Payments API both allow quick payments to be simply generated. 
+
+<br/>
+<br/>
+
+***
+
+<br/>
+<br/>
+
+**Activity 1102**:
+
+Some features of VSCode that I didn't know about are:
+
+Multi cursor selection:
+* To put cursors at arbitrary positions, you position your mouse and use 	Alt+Click or Option+Click. 
+* To set cursors above or below the current position, you use: Option+Command+Up or Option+Command+Down
+* You can add cursors to all occurrances of the current selection using: Shift+Command+L
+* To select only some occurrances of the current selection, you use: Command+D
